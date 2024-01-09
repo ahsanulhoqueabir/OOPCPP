@@ -3,8 +3,9 @@
   "displayName": "CP OOP C++ Snippet",
   "publisher": "MDAhsanulHoqueAbir",
   "description": "This is a simple snippets extention for CPP",
+  "pricing": "Free",
   "version": "1.1.2",
-  "icon": "/OOP LAB.png",
+  "icon": "/logo.jpg",
   "repository": {
     "type": "git",
     "url": "https://github.com/ahsanulhoqueabir/OOPCPP"
@@ -19,7 +20,7 @@
     "snippets": [
       {
         "language": "cpp",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/aSinippet.json"
       }
     ]
   }
