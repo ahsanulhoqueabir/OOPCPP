@@ -14,6 +14,41 @@
         ],
         "description": "Basic BoilerPlate for CPP"
     },
+    "CP boiler plate without testcase": {
+      "prefix": "/cp",
+      "body": [
+        "#include <bits/stdc++.h>",
+        "using namespace std;",
+        "void solve()",
+        "{",
+        "     ${0}",
+        "}",
+        "int main()",
+        "{ ",
+        "    solve();",
+        "    return 0;",
+        "}"
+      ],
+      "description": "CP boiler plate without testcase"
+    },
+    "CP boiler plate taking testcase": {
+      "prefix": "/cptestcase",
+      "body": [
+        "#include <bits/stdc++.h>",
+        "using namespace std;",
+        "void solve()",
+        "{",
+        "     ${0}",
+        "}",
+        "int main()",
+        "{ ",
+        "    int t; cin >> t;",
+        "    while(t--) solve();",
+        "    return 0;",
+        "}"
+      ],
+      "description": "CP boiler plate taking testcase"
+    },
     "long long Int": {
         "prefix": "/ll",
         "body": [
@@ -409,7 +444,7 @@
         "description": "Print YES"
     },
     "Print NO": {
-        "prefix": ["/pn","/pyn"]
+        "prefix": ["/pn","/pyn"],
         "body": [
           "cout << \"NO\" << \"\\n\";"
         ],
