@@ -1,8 +1,14 @@
 {
-  "name": "CP OOP CPP Snippet",
-  "displayName": "CP OOP CPP Snippet",
+  "name": "oopcpcpp",
+  "displayName": "CP OOP C++ Snippet",
+  "publisher": "MDAhsanulHoqueAbir",
   "description": "This is a simple snippets extention for CPP",
   "version": "0.0.1",
+  "icon": "/OOP LAB.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahsanulhoqueabir/OOPCPP"
+  },
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -13,7 +19,7 @@
     "snippets": [
       {
         "language": "cpp",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "/snippets/aSinippet.json"
       }
     ]
   }
