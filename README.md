@@ -8,18 +8,14 @@ To install this extension, follow these steps:
 
 - Open Visual Studio Code
 - Open the Extensions view by pressing Ctrl+Shift+X (Windows, Linux) or Cmd+Shift+X (macOS)
-- Search for "CP OOP C++ Snippet"
+- Search for `P OOP C++ Snippet`
 - Click the Install button
 - Once the extension is installed, you're ready to start using it!
 
 ## Usage
 
-This extension provides a set of code snippets that can be inserted into your source files in Visual Studio
-Code. To use them, simply type part of the snippet name and press Enter to see a list
-of possible matches. The suggestions will then filter down based on what you type. You can also use
-the autocomplete feature if enabled. When a match is selected, the snippet will be inserted at the
-cursor with any placeholders replaced by appropriate text. If a placeholder contains a colon
-(e.g., ${1:foo}), then the placeholder will become editable after insertion
+This extension provides a set of code snippets that can be inserted into your source files in Visual Studio Code. To use them, simply type part of the snippet name and press Enter to see a list of possible matches. The suggestions will then filter down based on what you type. You can also use the autocomplete feature if enabled. When a match is selected, the snippet will be inserted at the cursor with any placeholders replaced by appropriate text. If a placeholder contains a colon (e.g., `${1:x}`), then the placeholder will become editable after insertion.
+
 Once the editor has been closed and reopened, modifications to the file will not be saved back
 to the buffer - the edits were never there to begin with. This allows you to experiment with
 snippets without worrying about leaving traces.
@@ -28,8 +24,8 @@ snippets without worrying about leaving traces.
 
 <table>
     <tr>
-        <td>Description</td>
-        <td>Prefix</td>
+        <td><b>Description</b></td>
+        <td><b>Prefix</b></td>
     </tr>
     <tr>
         <td>Basic BoilerPlate for CPP</td>
@@ -312,7 +308,6 @@ snippets without worrying about leaving traces.
         <td>/switch</td>
     </tr>
 </table>
-
 
 ## Feedback and Support
 
