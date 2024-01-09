@@ -1,3 +1,550 @@
 {
+    "Basic BoilerPlate for CPP": {
+        "prefix": "/basicCPP",
+        "body": [
+          "#include <bits/stdc++.h>",
+          "using namespace std;",
+          "",
+          "int main()",
+          "{",
+          "    ",
+          "    ${1}",
+          "    return 0;",
+          "}"
+        ],
+        "description": "Basic BoilerPlate for CPP"
+    },
+    // primitive data type
+    "long long Int": {
+        "prefix": "/ll",
+        "body": [
+          "long long int ${0};"
+        ],
+        "description": "long long Int"
+    },
+    "long double": {
+        "prefix": "/ld",
+        "body": [
+          "long double ${1};"
+        ],
+        "description": "long double"
+    },
+    // input from user
+    "input one any type of variable which are declared": {
+        "prefix": "/in1",
+        "body": [
+          "cin >> ${1:x};"
+        ],
+        "description": "input one any type of variable which are declared"
+    },
+    "input two any type of variable which are declared": {
+        "prefix": "/in2",
+        "body": [
+          "cin >> ${1:x} >> ${2:y};",
+          ""
+        ],
+        "description": "input two any type of variable which are declared"
+      },
+    "input three any type of variable which are declared": {
+        "prefix": "/in3",
+        "body": [
+        "cin >> ${1:x} >> ${2:y} >> ${3:z};",
+        ""
+        ],
+        "description": "input three any type of variable which are declared"
+    },
+    "input four any type of variable which are declared": {
+        "prefix": "/in4",
+        "body": [
+        "cin >> ${1:x} >> ${2:y} >> ${3:z} >> ${4:a};",
+        ""
+        ],
+        "description": "input four any type of variable which are declared"
+    },
+    // declare and input from user of primary data type
+    //integer
+    "Declare and Input one integer variable": {
+        "prefix": "/inn1",
+        "body": [
+          "int ${1:x}; cin >> ${1:x};"
+        ],
+        "description": "Declare and Input one integer variable"
+    },
+    "Declare and Input two integer variable": {
+        "prefix": "/inn2",
+        "body": [
+        "int ${1:x}, ${2:y}; cin >> ${1:x} >> ${2:y};"
+        ],
+        "description": "Declare and Input two integer variable"
+    },
+    "Declare and Input three integer variable": {
+    	"prefix": ".inn3",
+    	"body": [
+    	"int ${1:x}, ${2:y}, ${3:z}; cin >> ${1:x} >> ${2:y} >> ${3:z};"
+    	],
+    	"description": "Declare and Input three integer variable"
+    },
+    //string
+    "Declare and Input one string variable": {
+    	"prefix": ".sin1",
+    	"body": [
+    	  "string ${1:x}; cin >> ${1:x};"
+    	],
+    	"description": "Declare and Input one string variable"
+    },
+    "Declare and Input two string variable": {
+        "prefix": "/sin2",
+        "body": [
+        "string ${1:x}, ${2:y}; cin >> ${1:x} >> ${2:y};"
+        ],
+        "description": "Declare and Input two string variable"
+    },
+    "Declare and Input three string variable": {
+        "prefix": "/sin3",
+        "body": [
+        "string ${1:x}, ${2:y}, ${3:z}; cin >> ${1:x} >> ${2:y} >> ${3:z};"
+        ],
+        "description": "Declare and Input three string variable"
+    },
+    "String Reverse": {
+        "prefix": "/revS",
+        "body": [
+          "reverse(${1:str}.begin(), ${1:str}.end());"
+        ],
+        "description": "String Reverse"
+    },
+    // long long integer
+    "Declare and Input one long long int variable": {
+        "prefix": "/llin1",
+        "body": [
+          "long long int ${1:x}; cin >> ${1:x};"
+        ],
+        "description": "Declare and Input one long long int variable"
+    },
+    "Declare and Input two long long int variable": {
+        "prefix": "/llin2",
+        "body": [
+        "long long int ${1:x}, ${2:y}; cin >> ${1:x} >> ${2:y};"
+        ],
+        "description": "Declare and Input two long long int variable"
+    },
+    "Declare and Input three long long int variable": {
+        "prefix": "/llin3",
+        "body": [
+        "long long int ${1:x}, ${2:y}, ${3:z}; cin >> ${1:x} >> ${2:y} >> ${3:z};"
+        ],
+        "description": "Declare and Input three long long int variable"
+    },
+    // long double
+    "Declare and Input one long double variable": {
+        "prefix": "/ldin1",
+        "body": [
+          "long double ${1:x}; cin >> ${1:x};"
+        ],
+        "description": "Declare and Input one long double variable"
+    },
+    "Declare and Input two long double variable": {
+        "prefix": "/ldin2",
+        "body": [
+        "long double ${1:x}, ${2:y}; cin >> ${1:x} >> ${2:y};"
+        ],
+        "description": "Declare and Input two long double variable"
+    },
+    "Declare and Input three long double variable": {
+        "prefix": "/ldin3",
+        "body": [
+        "long double ${1:x}, ${2:y}, ${3:z}; cin >> ${1:x} >> ${2:y} >> ${3:z};"
+        ],
+        "description": "Declare and Input three long double variable"
+    },
+    // float
+    "Declare and Input one float variable": {
+        "prefix": "/fin1",
+        "body": [
+          "float ${1:x}; cin >> ${1:x};"
+        ],
+        "description": "Declare and Input one float variable"
+    },
+    "Declare and Input two float variable": {
+        "prefix": "/fin2",
+        "body": [
+        "float ${1:x}, ${2:y}; cin >> ${1:x} >> ${2:y};"
+        ],
+        "description": "Declare and Input two float variable"
+    },
+    "Declare and Input three float variable": {
+        "prefix": "/fin3",
+        "body": [
+        "float ${1:x}, ${2:y}, ${3:z}; cin >> ${1:x} >> ${2:y} >> ${3:z};"
+        ],
+        "description": "Declare and Input three float variable"
+    },
+    // double
+    "Declare and Input one double variable": {
+        "prefix": "/din1",
+        "body": [
+          "double ${1:x}; cin >> ${1:x};"
+        ],
+        "description": "Declare and Input one double variable"
+    },
+    "Declare and Input two double variable": {
+        "prefix": "/din2",
+        "body": [
+        "double ${1:x}, ${2:y}; cin >> ${1:x} >> ${2:y};"
+        ],
+        "description": "Declare and Input two double variable"
+    },
+    "Declare and Input three double variable": {
+        "prefix": "/din3",
+        "body": [
+        "double ${1:x}, ${2:y}, ${3:z}; cin >> ${1:x} >> ${2:y} >> ${3:z};"
+        ],
+        "description": "Declare and Input three double variable"
+    },
+    // char
+    "Declare and Input one char variable": {
+        "prefix": "/cin1",
+        "body": [
+          "char ${1:x}; cin >> ${1:x};"
+        ],
+        "description": "Declare and Input one char variable"
+    },
+    "Declare and Input two char variable": {
+        "prefix": "/cin2",
+        "body": [
+        "char ${1:x}, ${2:y}; cin >> ${1:x} >> ${2:y};"
+        ],
+        "description": "Declare and Input two char variable"
+    },
+    "Declare and Input three char variable": {
+        "prefix": "/cin3",
+        "body": [
+        "char ${1:x}, ${2:y}, ${3:z}; cin >> ${1:x} >> ${2:y} >> ${3:z};"
+        ],
+        "description": "Declare and Input three char variable"
+    },
+    // bool
+    "Declare and Input one bool variable": {
+        "prefix": "/bin1",
+        "body": [
+          "bool ${1:x}; cin >> ${1:x};"
+        ],
+        "description": "Declare and Input one bool variable"
+    },
+    "Declare and Input two bool variable": {
+        "prefix": "/bin2",
+        "body": [
+        "bool ${1:x}, ${2:y}; cin >> ${1:x} >> ${2:y};"
+        ],
+        "description": "Declare and Input two bool variable"
+    },
+    "Declare and Input three bool variable": {
+        "prefix": "/bin3",
+        "body": [
+        "bool ${1:x}, ${2:y}, ${3:z}; cin >> ${1:x} >> ${2:y} >> ${3:z};"
+        ],
+        "description": "Declare and Input three bool variable"
+    },
+    // user defined data type library
+    // vector
+    "Declare and Input one vector variable": {
+        "prefix": "/vin1",
+        "body": [
+          "vector<${1:int}> ${2:x}; cin >> ${2:x};"
+        ],
+        "description": "Declare and Input one vector variable"
+    },
+    "Declare and Input two vector variable": {
+        "prefix": "/vin2",
+        "body": [
+        "vector<${1:int}> ${2:x}, ${3:y}; cin >> ${2:x} >> ${3:y};"
+        ],
+        "description": "Declare and Input two vector variable"
+    },
+    "Declare and Input three vector variable": {
+        "prefix": "/vin3",
+        "body": [
+        "vector<${1:int}> ${2:x}, ${3:y}, ${4:z}; cin >> ${2:x} >> ${3:y} >> ${4:z};"
+        ],
+        "description": "Declare and Input three vector variable"
+    },
+    "all vector element": {
+        "prefix": "/allV",
+        "body": [
+          "${1:v}.begin(),${1:v}.end()"
+        ],
+        "description": "all vector element"
+    },
+    "Ascending Order Sort of Vector": {
+        "prefix": ["/sortVector","/ascV"],
+        "body": [
+          "sort(${1:v}.begin(), ${1:v}.end());"
+        ],
+        "description": "Ascending Order Sort of Vector"
+    },
+    "Descending Order Sort of Vector": {
+        "prefix": ["/sortVectorD","/dscV"],
+        "body": [
+          "sort(${1:v}.begin(), ${1:v}.end(), greater<${2:int}>());"
+        ],
+        "description": "Descending Order Sort of Vector"
+    },
+    "Reverse of Vector": {
+        "prefix": "/revV",
+        "body": [
+          "reverse(${1:v}.begin(), ${1:v}.end());"
+        ],
+        "description": "Reverse of Vector"
+    },
+    // pair
+    "Declare and Input one pair variable": {
+        "prefix": "/pin1",
+        "body": [
+          "pair<${1:int}, ${2:int}> ${3:x}; cin >> ${3:x};"
+        ],
+        "description": "Declare and Input one pair variable"
+    },
+    "Declare and Input two pair variable": {
+        "prefix": "/pin2",
+        "body": [
+        "pair<${1:int}, ${2:int}> ${3:x}, ${4:y}; cin >> ${3:x} >> ${4:y};"
+        ],
+        "description": "Declare and Input two pair variable"
+    },
+    "Declare and Input three pair variable": {
+        "prefix": "/pin3",
+        "body": [
+        "pair<${1:int}, ${2:int}> ${3:x}, ${4:y}, ${5:z}; cin >> ${3:x} >> ${4:y} >> ${5:z};"
+        ],
+        "description": "Declare and Input three pair variable"
+    },
+    "Vector of Pair": {
+        "prefix": "/vp",
+        "body": [
+          "vector<pair<${1:int},${1:int}>>"
+        ],
+        "description": "Vector of Pair"
+    },
+    // map
+    "Declare and Input one map variable": {
+        "prefix": "/mapin1",
+        "body": [
+          "map<${1:int}, ${2:int}> ${3:x}; cin >> ${3:x};"
+        ],
+        "description": "Declare and Input one map variable"
+    },
+    "Declare and Input two map variable": {
+        "prefix": "/mapin2",
+        "body": [
+        "map<${1:int}, ${2:int}> ${3:x}, ${4:y}; cin >> ${3:x} >> ${4:y};"
+        ],
+        "description": "Declare and Input two map variable"
+    },
+    "Declare and Input three map variable": {
+        "prefix": "/mapin3",
+        "body": [
+        "map<${1:int}, ${2:int}> ${3:x}, ${4:y}, ${5:z}; cin >> ${3:x} >> ${4:y} >> ${5:z};"
+        ],
+        "description": "Declare and Input three map variable"
+    },
+    // set
+    "Declare and Input one set variable": {
+        "prefix": "/setin1",
+        "body": [
+          "set<${1:int}> ${2:x}; cin >> ${2:x};"
+        ],
+        "description": "Declare and Input one set variable"
+    },
+    "Declare and Input two set variable": {
+        "prefix": "/setin2",
+        "body": [
+        "set<${1:int}> ${2:x}, ${3:y}; cin >> ${2:x} >> ${3:y};"
+        ],
+        "description": "Declare and Input two set variable"
+    },
+    "Declare and Input three set variable": {
+        "prefix": "/setin3",
+        "body": [
+        "set<${1:int}> ${2:x}, ${3:y}, ${4:z}; cin >> ${2:x} >> ${3:y} >> ${4:z};"
+        ],
+        "description": "Declare and Input three set variable"
+    },
+    // utilites
+    "Output one variable in one line": {
+        "prefix": "/outn",
+        "body": [
+          "cout << ${1:x} << \"\\n\";",
+          ""
+        ],
+        "description": "Output one variable in one line"
+    },
+    "Output two variable in one line": {
+        "prefix": "/out2",
+        "body": [
+        "cout << ${1:x} << ${2:y} << \"\\n\";",
+        ""
+        ],
+        "description": "Output two variable in one line"
+    },
+    "Output three variable in one line": {
+        "prefix": "/out3",
+        "body": [
+        "cout << ${1:x} << ${2:y} << ${3:z} << \"\\n\";",
+        ""
+        ],
+        "description": "Output three variable in one line"
+    },
+    "Output one variable in one line with space": {
+        "prefix": "/outs",
+        "body": [
+          "cout << ${1:x} << \" \";",
+          ""
+        ],
+        "description": "Output one variable in one line with space"
+    },
+    "Output two variable in one line with space": {
+        "prefix": "/outs2",
+        "body": [
+        "cout << ${1:x} << \" \" << ${2:y} << \"\\n\";",
+        ""
+        ],
+        "description": "Output two variable in one line with space"
+    },
+    "Output three variable in one line with space": {
+        "prefix": "/outs3",
+        "body": [
+        "cout << ${1:x} << \" \" << ${2:y} << \" \" << ${3:z} << \"\\n\";",
+        ""
+        ],
+        "description": "Output three variable in one line with space"
+    },
+    "Print YES": {
+        "prefix": ["/py","/pys"]
+        "body": [
+          "cout << \"YES\" << \"\\n\";"
+        ],
+        "description": "Print YES"
+    },
+    "Print NO": {
+        "prefix": ["/pn","/pyn"]
+        "body": [
+          "cout << \"NO\" << \"\\n\";"
+        ],
+        "description": "Print NO"
+    },
+    "Print New Line": {
+        "prefix": ["/nl","/newline"],
+        "body": [
+          "cout << \"\\n\";"
+        ],
+        "description": "Print New Line"
+    },
+    "Print Space": {
+        "prefix": ["/sp","/space"],
+        "body": [
+          "cout << \" \";"
+        ],
+        "description": "Print Space"
+    },
+    "Print Tab": {
+        "prefix": ["/tab"],
+        "body": [
+          "cout << \"\\t\";"
+        ],
+        "description": "Print Tab"
+    },
+    "Find integer Length": {
+        "prefix": "/lenInt",
+        "body": [
+          "${1:int} l = log10(${2:x}) + 1;"
+        ],
+        "description": "Find integer Length"
+    },
+    "For loop": {
+        "prefix": "/loopFor",
+        "body": [
+          "for(${1:int} i=0;i<${2:n};i${3:+}=${4:1})",
+          "{",
+          "    ${0}",
+          "}"
+        ],
+        "description": "For loop"
+    },
+    "While loop": {
+        "prefix": "/loopWhile",
+        "body": [
+          "while(${1:condition})",
+          "{",
+          "    ${0}",
+          "}"
+        ],
+        "description": "While loop"
+    },
+    "Do While loop": {
+        "prefix": "/loopDoWhile",
+        "body": [
+          "do",
+          "{",
+          "    ${0}",
+          "} while(${1:condition});"
+        ],
+        "description": "Do While loop"
+    },
+    "If else": {
+        "prefix": "/ifElse",
+        "body": [
+          "if(${1:condition})",
+          "{",
+          "    ${2}",
+          "}",
+          "else",
+          "{",
+          "    ${3}",
+          "}"
+        ],
+        "description": "If else"
+    },
+    "else if": {
+        "prefix": "/elseif",
+        "body": [
+          "else if(${1}){",
+          "   ${0}",
+          "}"
+        ],
+        "description": "else if"
+    },
+    "else": {
+        "prefix": "/else",
+        "body": [
+          "else{",
+          "  ${0}",
+          "}"
+        ],
+        "description": "else"
+    },
+    "Switch": {
+        "prefix": "/switch",
+        "body": [
+          "switch(${1:variable})",
+          "{",
+          "    case ${2:1}:",
+          "        ${3}",
+          "        break;",
+          "    default:",
+          "        ${4}",
+          "}"
+        ],
+        "description": "Switch"
+    },
     
+
+    
+
+
+
+
+
+
+
+            
 }

@@ -1,7 +1,7 @@
 {
-  "name": "ooplab",
-  "displayName": "ooplab",
-  "description": "",
+  "name": "CP OOP CPP Snippet",
+  "displayName": "CP OOP CPP Snippet",
+  "description": "This is a simple snippets extention for CPP",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.54.0"
