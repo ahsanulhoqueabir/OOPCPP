@@ -553,6 +553,90 @@
           "}"
         ],
         "description": "Switch"
+    },
+    "Singly Linked List Node": {
+      "prefix": "/singly",
+      "body": [
+        "class Node{\r",
+        "   public:\r",
+        "      int val;\r",
+        "      Node *next;\r",
+        "   Node(int val){\r",
+        "      this->val=val;\r",
+        "      this->next=NULL;\r",
+        "   }\r",
+        "};"
+      ],
+      "description": "Singly Linked List Node"
+    },
+    "Doubly Linked List Node": {
+      "prefix": "/doubly",
+      "body": [
+        "class Node{\r",
+        "   public:\r",
+        "      int val;\r",
+        "      Node *next;\r",
+        "      Node *prev;\r",
+        "   Node(int val){\r",
+        "      this->val=val;\r",
+        "      this->next=NULL;\r",
+        "      this->prev=NULL;\r",
+        "   }\r",
+        "};"
+      ],
+      "description": "Doubly Linked List Node"
+    },
+    "Binary Search Tree Node": {
+      "prefix": "/bst",
+      "body": [
+        "class Node{\r",
+        "   public:\r",
+        "      int val;\r",
+        "      Node *left;\r",
+        "      Node *right;\r",
+        "   Node(int val){\r",
+        "      this->val=val;\r",
+        "      this->left=NULL;\r",
+        "      this->right=NULL;\r",
+        "   }\r",
+        "};"
+      ],
+      "description": "Binary Search Tree Node"
+    },
+    "Graph Node": {
+      "prefix": "/graph",
+      "body": [
+        "class Node{\r",
+        "   public:\r",
+        "      int val;\r",
+        "      vector<Node*> adj;\r",
+        "   Node(int val){\r",
+        "      this->val=val;\r",
+        "   }\r",
+        "};"
+      ],
+      "description": "Graph Node"
+    },
+    "Queue": {
+      "prefix": "/queue",
+      "body": [
+        "queue<${1:int}> ${2:q};"
+      ],
+      "description": "Queue"
+    },
+    "Stack": {
+      "prefix": "/stack",
+      "body": [
+        "stack<${1:int}> ${2:s};"
+      ],
+      "description": "Stack"
+    },
+    "Priority Queue": {
+      "prefix": "/pq",
+      "body": [
+        "priority_queue<${1:int}> ${2:pq};"
+      ],
+      "description": "Priority Queue"
     }
      
 }

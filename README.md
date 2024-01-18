@@ -8,7 +8,7 @@ To install this extension, follow these steps:
 
 - Open Visual Studio Code
 - Open the Extensions view by pressing Ctrl+Shift+X (Windows, Linux) or Cmd+Shift+X (macOS)
-- Search for `P OOP C++ Snippet`
+- Search for `CP OOP C++ Snippet`
 - Click the Install button
 - Once the extension is installed, you're ready to start using it!
 
@@ -230,6 +230,34 @@ snippets without worrying about leaving traces.
     <tr>
         <td>Declare and Input three set variable</td>
         <td>/setin3</td>
+    </tr>
+    <tr>
+      <td>Singly Linked List Node</td>
+      <td>/singly</td>
+    </tr>
+    <tr>
+      <td>Doubly Linked List Node</td>
+      <td>/doubly</td>
+    </tr>
+    <tr>
+      <td>Binary Search Tree Node</td>
+      <td>/bst</td>
+    </tr>
+    <tr>
+      <td>Graph Node</td>
+      <td>/graph</td>
+    </tr>
+    <tr>
+      <td>Queue</td>
+      <td>/queue</td>
+    </tr>
+    <tr>
+      <td>Stack</td>
+      <td>/stack</td>
+    </tr>
+    <tr>
+      <td>Priority Queue</td>
+      <td>/pq</td>
     </tr>
     <tr>
         <td>Output one variable in one line</td>
