@@ -504,5 +504,12 @@
       "}"
     ],
     "description": "CP boiler plate taking testcase"
-  }
+  },
+  "Get File Name": {
+		"prefix": "/fileName",
+		"body": [
+		  "${TM_FILENAME_BASE/[^a-zA-Z0-9]+/_/g}"
+		],
+		"description": "Get File Name"
+	  }
 }
