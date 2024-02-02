@@ -20,7 +20,7 @@
     "snippets": [
       {
         "language": "cpp",
-        "path": "./snippets/aSinippet.json"
+        "path": "./snippets/snippets.code-snippets"
       }
     ]
   }
