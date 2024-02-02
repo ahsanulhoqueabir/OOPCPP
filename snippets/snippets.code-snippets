@@ -475,13 +475,13 @@
     "body": [
       "#include <bits/stdc++.h>",
       "using namespace std;",
-      "void ${TM_FILENAME_BASE/(\\\\..+)/_/}()",
+      "void ${TM_FILENAME_BASE/[^a-zA-Z0-9]+/_/g}()",
       "{",
       "     ",
       "}",
       "int main()",
       "{ ",
-      "     ${TM_FILENAME_BASE/(\\\\..+)/_/}();",
+      "    ${TM_FILENAME_BASE/[^a-zA-Z0-9]+/_/g}();",
       "    return 0;",
       "}"
     ],
@@ -492,14 +492,14 @@
     "body": [
       "#include <bits/stdc++.h>",
       "using namespace std;",
-      "void ${TM_FILENAME_BASE/(\\..+)/_/}()",
+      "void ${TM_FILENAME_BASE/[^a-zA-Z0-9]+/_/g}()",
       "{",
       "     ",
       "}",
       "int main()",
       "{ ",
       "    int t; cin >> t;",
-      "    while(t--)  ${TM_FILENAME_BASE/(\\..+)/_/}();",
+      "    while(t--)  ${TM_FILENAME_BASE/[^a-zA-Z0-9]+/_/g}();",
       "    return 0;",
       "}"
     ],
