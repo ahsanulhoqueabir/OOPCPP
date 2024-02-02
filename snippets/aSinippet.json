@@ -15,40 +15,40 @@
         "description": "Basic BoilerPlate for CPP"
     },
     "CP boiler plate without testcase": {
-      "prefix": "/cp",
+      "prefix": "/cpwithouttestcase",
       "body": [
         "#include <bits/stdc++.h>",
         "using namespace std;",
-        "void solve()",
+        "void  ${TM_FILENAME_BASE/(\\\\..+)/_/}()",
         "{",
-        "     ${0}",
+        "     ",
         "}",
         "int main()",
         "{ ",
-        "    solve();",
+        "     ${TM_FILENAME_BASE/(\\\\..+)/_/}();",
         "    return 0;",
         "}"
       ],
       "description": "CP boiler plate without testcase"
     },
     "CP boiler plate taking testcase": {
-      "prefix": "/cptestcase",
+      "prefix": "/banglaCode",
       "body": [
         "#include <bits/stdc++.h>",
         "using namespace std;",
-        "void solve()",
+        "void ${TM_FILENAME_BASE/(\\..+)/_/}()",
         "{",
-        "     ${0}",
+        "     ",
         "}",
         "int main()",
         "{ ",
         "    int t; cin >> t;",
-        "    while(t--) solve();",
+        "    while(t--) ${TM_FILENAME_BASE/(\\..+)/_/}();",
         "    return 0;",
         "}"
       ],
       "description": "CP boiler plate taking testcase"
-    },
+      },
     "long long Int": {
         "prefix": "/ll",
         "body": [
@@ -437,8 +437,8 @@
         "description": "Output three variable in one line with space"
     },
     "Print YES": {
-        "prefix": ["/py","/pys"]
-        "body": [
+        "prefix": ["/py","/pys"],
+        "body" : [
           "cout << \"YES\" << \"\\n\";"
         ],
         "description": "Print YES"

@@ -14,7 +14,6 @@
         ],
         "description": "Basic BoilerPlate for CPP"
     },
-    // primitive data type
     "long long Int": {
         "prefix": "/ll",
         "body": [
