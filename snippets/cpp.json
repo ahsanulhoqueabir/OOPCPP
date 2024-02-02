@@ -14,41 +14,6 @@
         ],
         "description": "Basic BoilerPlate for CPP"
     },
-    "CP boiler plate without testcase": {
-      "prefix": "/cpwithouttestcase",
-      "body": [
-        "#include <bits/stdc++.h>",
-        "using namespace std;",
-        "void  ${TM_FILENAME_BASE/(\\\\..+)/_/}()",
-        "{",
-        "     ",
-        "}",
-        "int main()",
-        "{ ",
-        "     ${TM_FILENAME_BASE/(\\\\..+)/_/}();",
-        "    return 0;",
-        "}"
-      ],
-      "description": "CP boiler plate without testcase"
-    },
-    "CP boiler plate taking testcase": {
-      "prefix": "/banglaCode",
-      "body": [
-        "#include <bits/stdc++.h>",
-        "using namespace std;",
-        "void ${TM_FILENAME_BASE/(\\..+)/_/}()",
-        "{",
-        "     ",
-        "}",
-        "int main()",
-        "{ ",
-        "    int t; cin >> t;",
-        "    while(t--) ${TM_FILENAME_BASE/(\\..+)/_/}();",
-        "    return 0;",
-        "}"
-      ],
-      "description": "CP boiler plate taking testcase"
-      },
     "long long Int": {
         "prefix": "/ll",
         "body": [

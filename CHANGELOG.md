@@ -11,3 +11,8 @@ All notable changes to the "ooplab" extension will be documented in this file.
 ## [Update]
 - Date: 19/01/2024
 - Added new snippet for stack,singly and doubly linked list node,Priority Queue,Queue,Graph Node,Binary Search Tree Node.
+
+- Date: 02/02/2024
+    - version: 1.1.5
+    - Solve function will be replaced by file name
+ 
