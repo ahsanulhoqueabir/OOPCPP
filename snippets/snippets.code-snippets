@@ -511,5 +511,41 @@
 		  "${TM_FILENAME_BASE/[^a-zA-Z0-9]+/_/g}"
 		],
 		"description": "Get File Name"
-	  }
+	  },
+    "Creating LPS Vector": {
+      "prefix": "/StringAlgolps",
+      "body": [
+        "vector<int> Createlps(string &s)",
+        "{",
+        "    int n = s.size();",
+        "    vector<int> lps(n, 0);",
+        "    int len = 0;",
+        "    int i = 1;",
+        "    while (i < n)",
+        "    {",
+        "        if (s[i] == s[len])",
+        "        {",
+        "            len++;",
+        "            lps[i] = len;",
+        "            i++;",
+        "        }",
+        "        else",
+        "        {",
+        "            if (len != 0)",
+        "            {",
+        "                len = lps[len - 1];",
+        "            }",
+        "            else",
+        "            {",
+        "                lps[i] = 0;",
+        "                i++;",
+        "            }",
+        "        }",
+        "    }",
+        "    return lps;",
+        "}",
+        ""
+      ],
+      "description": "Creating LPS Vector"
+    }
 }
